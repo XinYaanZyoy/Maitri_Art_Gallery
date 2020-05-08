@@ -44,38 +44,11 @@
     
         {% include navigation.html %}
 
-        <!-- HERO -->
-        <div class="hero">
-            <!-- FRONT CONTENT -->
-            <div class="front-content">
-                <img src="{{site.logo}}" class="img-responsive logo" alt="logo">
-                <h1>Hola! I’m <span>Maitri Patel</span>.<br>This is my art gallery.</h1>
-            </div>
-            <!-- /FRONT CONTENT -->
-       </div>
-        <!-- /HERO -->
-        
-        <!-- PORTFOLIO -->
-        <div class="portfolio">    
-            
-            {% assign arts = site.static_files | where: "image", true %}
-                {% for art in arts %}
-                    <a class="item" href="{{art.path}}">
-                        <i class="fa fa-eye" aria-hidden="true"></i>
-                        <div class="item-cover" style="background-image: url({{art.path}})"></div>                
-                    </a>
-                {% endfor %}
-
-            <!-- ITEM -->
-<!--             <a class="item" href="assets/img/portfolio/item-1.jpg">
-                <i class="fa fa-eye" aria-hidden="true"></i>
-                <div class="item-cover" style="background-image: url(assets/img/portfolio/item-1.jpg)"></div>                
-            </a> -->
-            <!-- /ITEM -->            
-            
-        </div>
-        <!-- /PORTFOLIO -->
-        
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        {{ content }}
+      </div>
+    </main>
         
 
     {% include footer.html %}
