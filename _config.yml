@@ -31,3 +31,10 @@ plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
   - jekyll-books
+
+# list of arts
+arts:
+  art1:
+    - image: "arts/Krishna_et_Radha_dans_un_pavillon.jpg"
+    - title: "Radha and Krishna"
+    - caption: "The Eternal Love Of Radha And Krishna!"
