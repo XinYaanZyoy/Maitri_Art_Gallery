@@ -8,9 +8,10 @@ if [ -d "$DIR" ]; then
     i=0
     while read -r line; do
        printf '%d %s\n' "$i" "${line}"
+       echo "_${line}"
        if [ -f "${line}" ]; then
            if [ -f "_${line}" ]; then
-               echo "IMPOSSIBLE!";
+               echo "IMPOSSIBLE!1";
            else
                echo "it was created!";
            fi
@@ -18,7 +19,7 @@ if [ -d "$DIR" ]; then
            if [ -f "_${line}" ]; then
                echo "it was deleted!";
            else
-               echo "IMPOSSIBLE!";
+               echo "IMPOSSIBLE!2";
            fi
        fi
     (( count++ ))
