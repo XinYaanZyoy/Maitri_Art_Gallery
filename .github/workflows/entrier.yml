@@ -7,12 +7,6 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest   
-    steps:
-      - uses: actions/checkout@v1
-    steps:
-      - id: file_changes
-        uses: trilom/file-changes-action@v1.2.3
-#     - name: making a gallery entry
-#       env: 
-#         GH_PAT: ${{secrets.GH_PAT}}
-#       run: bash entrier.sh
+      steps:
+          id: file_changes
+          uses: trilom/file-changes-action@v1.2.3
