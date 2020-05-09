@@ -15,27 +15,13 @@ title: india's Art Gallery
         
         <!-- PORTFOLIO -->
         <div class="portfolio">    
-<!--         {% for art in site.arts %}
-                <a alt="{{art[1].title}}" class="item" href="{{baseurl}}/{{scope}}/{{art[1].image}}">
-                    <div alt="{{art[1].title}}" class="item-cover" style="background-image: url({{art[1].image}})"></div>   
-                         <i class="fa fa-quote-left" aria-hidden="true" onclick="return false;"></i>
-                </a>
-        {% endfor %} -->
-         
-<!--          {% for art in site.arts %}
-          <a alt="{{art}}" class="item" href="{{site.baseurl}}/{{site.scope}}/{{file.path}}">
-             <div alt="{{file.basename}}" class="item-cover" style="background-image: url({{site.baseurl}}/{{site.scope}}/{{file.path}})"></div>   
-             <i class="fa fa-quote-left" aria-hidden="true" onclick="location.href='{{site.baseurl}}/{{site.scope}}/caption/{{file.path}}'; return false;"></i>
-          </a>
-         {% endfor %} -->
-                
-                <a alt="art" class="item" href="{{site.baseurl}}/{{site.scope}}/arts/radha_krishna_pavillon.jpg">
-                        <div alt="art" class="item-cover" style="background-image: url({{site.baseurl}}/{{site.scope}}/arts/radha_krishna_pavillon.jpg)"></div>   
-                        <i class="fa fa-quote-left" aria-hidden="true" onclick="location.href='{{site.baseurl}}/{{site.scope}}/captions/radha_krishna_pavillon'; return false;"></i>
-                </a>
 
-                <!--                 {% for caption in site.captions %}
-                <a href="{{site.baseurl}}/{{site.scope}}/{{caption.permalink}}">{{caption.title}}</a>
-                {% endfor %} -->
+         {% for art in site.arts %}
+          <a alt="{{art.title}}" class="item" href="{{site.baseurl}}/{{site.scope}}/{{art.image}}">
+             <div alt="{{art.title}}" class="item-cover" style="background-image: url({{site.baseurl}}/{{site.scope}}/{{art.image}})"></div>   
+             <i class="fa fa-quote-left" aria-hidden="true" onclick="location.href='{{site.baseurl}}/{{site.scope}}/{{art.permalink}}'; return false;"></i>
+          </a>
+         {% endfor %}
+                
         </div>
         <!-- /PORTFOLIO -->
