@@ -17,7 +17,8 @@ if [ -d "$DIR" ]; then
                    echo "it was created!";
                    echo "creating "_${line%.*}.md"";
                    fname="'${line}'/${1##*/}";
-                   echo "---$'\n'layout: caption$'\n'title: ${fname%.*}$'\n'image: ${line}$'\n'permalink: 'captions/'${fname%.*}---$'\n'" > "_${line%.*}.md";
+                   echo "---"$'\n'"layout: post"$'\n'"title: ${f%.*}"$'\n'"date: $(date)"$'\n'"---" > "_${line%.*}.md"
+#                    echo "---$'\n'layout: caption$'\n'title: ${fname%.*}$'\n'image: ${line}$'\n'permalink: 'captions/'${fname%.*}---$'\n'" > "_${line%.*}.md";
                fi
            else
                if [ -f "_${line%.*}.md" ]; then
@@ -30,6 +31,8 @@ if [ -d "$DIR" ]; then
        fi
        (( i++ ))
     done < changes
+    echo "removing changes file"
+    rm -f changes;
     echo $'\n'"git status: $(git status)"$'\n';
     git config --global user.name XinYaanZyoy && git config --global user.email XinYaanZyoy@gmail.com
     git add . && git commit -m "Art Entry: $(date)"
