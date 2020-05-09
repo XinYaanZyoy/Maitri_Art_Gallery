@@ -1,4 +1,15 @@
 # Maitri's Art Gallery
+-------
+## Usage
+1. upload an art in arts directory
+2. edit _config.yml by adding the following-like structure
+```
+art[number]:
+  image: [link to this art in arts directory]
+  title: [short title of this art]
+  caption: [long description of this art]
+```
+3. done! checkout the website!
 --------
 Maintained by [XinYaanZyoy](https://XinYaanZyoy.github.io)
 
