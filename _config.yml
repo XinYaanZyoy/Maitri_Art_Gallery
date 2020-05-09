@@ -1,5 +1,7 @@
 # name of the website
 name: "Maitri's Art Gallery"
+# color of the theme on android phones
+theme_color: "#d80247"
 # greetings on the gome page
 greeting: "Hi!"
 # author of the website
