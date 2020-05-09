@@ -8,8 +8,8 @@
         <meta property="og:description" content="{{site.description}}">
         <meta property="og:image" content="{{site.logo}}">
         <!-- PAGE TITLE -->
-        <title>"{{page.title}}"</title>
-
+        <title>{{page.title}}</title>
+        
         <!-- FAVICON -->
         <link rel="shortcut icon" href="{{site.favicon}}" type="image/x-icon">
         <link rel="icon" href="{{site.favicon}}" type="image/x-icon">
@@ -30,6 +30,7 @@
         <meta name="msapplication-TileColor" content="{{site.theme_color}}">
         <meta name="msapplication-navbutton-color" content="{{site.theme_color}}">
         
+        <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
     </head>
     
     <body style="overflow-y: scroll;">
