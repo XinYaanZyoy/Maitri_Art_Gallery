@@ -3,7 +3,7 @@ name: entrier
 on: 
   push:
     paths: 
-      - 'arts/**'
+      - 'art/**'
 jobs:
   build:
     runs-on: ubuntu-latest   
