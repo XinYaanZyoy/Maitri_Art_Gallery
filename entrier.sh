@@ -8,7 +8,7 @@ if [ -d "$DIR" ]; then
     i=0
     while read -r line; do
        printf '%d %s\n' "$i" "${line}"
-       echo "_$DIR/${'${line}'%.*}.md"
+       echo "_$DIR/${${line}%.*}.md"
        if [ -f "_$DIR/${'${line}'%.*}.md" ]; then
            if [ -f "_$DIR/${'${line}'%.*}.md" ]; then
                echo "IMPOSSIBLE! it can't exist at both the places!";
