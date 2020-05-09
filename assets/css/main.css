@@ -511,15 +511,16 @@ a:hover
             transition: .1s ease;
     text-align: center;
 
-    opacity: 0;
+    opacity: 1;
     color: #fff;
     border-radius: 100%;
 }
 
-.portfolio .item:hover i
+/* .portfolio .item:hover i
 {
     opacity: 1;
 }
+ */
 
 .portfolio .item i:after
 {
