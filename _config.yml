@@ -31,10 +31,8 @@ description: "the digital collection of my arts"
 collections:
   arts:
     output: true
-    art: true
   captions:
     output: true
-    caption: true
 plugins:
   - jekyll-feed
   - jekyll-sitemap
