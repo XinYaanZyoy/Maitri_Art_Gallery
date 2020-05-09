@@ -1,5 +1,7 @@
 # name of the website
 name: "Maitri's Art Gallery"
+# greetings on the gome page
+greeting: "Hi!"
 # author of the website
 author: "Maitri Patel"
 # heading on the home and about page
