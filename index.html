@@ -19,19 +19,7 @@ title: Maitri's Art Gallery
         {% for art in site.arts %}
                 <a alt="{{art[1].title}}" class="item" href="{{art[1].image}}">
                     <div alt="{{art[1].title}}" class="item-cover" style="background-image: url({{art[1].image}})"></div>   
-            <section class="cd-section">
-  
-                 		<div class="cd-modal-action">
                          <i class="fa fa-quote-left btn" data-type="modal-trigger" aria-hidden="true" onclick="return false;">Fire</i>
-                      			<span class="cd-modal-bg"></span>
-                   </div>
-                   <div class="cd-modal">
-                     			<div class="cd-modal-content">
-                        </div>
-                   </div>
-             		<a href="#0" class="cd-modal-close">Close</a>
-            </section>    
-             
                 </a>
         {% endfor %}
         </div>
