@@ -7,10 +7,10 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    steps:
-      - uses: trilom/file-changes-action@v1.2.3
-        with:
-          token: ${{secrets.GH_PAT}}
-      - name: Echo file changes
-        run: |
-          echo Changed files: ${{ steps.get_file_changes.outputs.files }}
+        steps:
+    - uses: actions/checkout@v1
+    - name: making an art entry
+      env: 
+        GH_PAT: ${{secrets.GH_PAT}}
+      run: bash entrier.sh
+      
