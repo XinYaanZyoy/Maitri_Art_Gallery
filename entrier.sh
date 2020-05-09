@@ -16,8 +16,8 @@ if [ -d "$DIR" ]; then
                else
                    echo "it was created!";
                    echo "creating "_${line%.*}.md"";
-                   f = "'${line}'/${1##*/}";
-                   echo "---$'\n'layout: caption$'\n'title: ${f%.*}$'\n'image: ${line}$'\n'permalink: 'captions/'${f%.*}---$'\n'" > "_${line%.*}.md";
+                   fname="'${line}'/${1##*/}";
+                   echo "---$'\n'layout: caption$'\n'title: ${fname%.*}$'\n'image: ${line}$'\n'permalink: 'captions/'${fname%.*}---$'\n'" > "_${line%.*}.md";
                fi
            else
                if [ -f "_${line%.*}.md" ]; then
