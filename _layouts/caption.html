@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en" style="overflow-y: scroll;">
+    <head>
+        <!-- META -->
+        <meta charset="utf-8">
+        <meta name="robots" content="noodp">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <meta property="og:description" content="{{site.description}}">
+        <meta property="og:image" content="{{site.logo}}">
+        <!-- PAGE TITLE -->
+        <title>"{{page.title}}"</title>
+
+        <!-- FAVICON -->
+        <link rel="shortcut icon" href="{{baseurl}}/{{scope}}/{{site.favicon}}" type="image/x-icon">
+        <link rel="icon" href="{{baseurl}}/{{scope}}/{{site.favicon}}" type="image/x-icon">
+        
+         <!-- Web Application Manifest -->
+        <!-- Add to homescreen for Chrome on Android -->
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="application-name" content="{{site.name}}">
+        <meta name="theme-color" content="{{site.theme_color}}">
+
+        <!-- Add to homescreen for Safari on iOS -->
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <meta name="apple-mobile-web-app-title" content="{{site.name}}">
+        <meta name="apple-mobile-web-app-status-bar-style" content="{{site.theme_color}}">
+
+        <!-- Tile icon for Win8 -->
+        <meta name="msapplication-TileColor" content="{{site.theme_color}}">
+        <meta name="msapplication-navbutton-color" content="{{site.theme_color}}">
+        
+        <!-- FONTS -->
+        <link href="https://fonts.googleapis.com/css?family=Bellefair&amp;subset=latin-ext" rel="stylesheet">
+        <!-- STYLESHEETS -->
+        <link rel="stylesheet" type="text/css" href="{{baseurl}}/{{scope}}/assets/css/plugins.css">
+        <link rel="stylesheet" type="text/css" href="{{baseurl}}/{{scope}}/assets/css/main.css">
+    </head>
+    <body style="overflow-y: scroll;">
+
+        {% include loading.html %}
+
+<!-- NAVIGATION BUTTON -->
+<div class="navigation-button">
+
+     <a href="{{baseurl}}/{{scope}}"><p><i class="fa fa-close" aria-hidden="true"></i></p></a>
+
+</div>
+<!-- /NAVIGATION BUTTON -->
+    
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        {{ content }}
+      </div>
+    </main>
+        
+
+    {% include footer.html %}
+
+        <!-- JAVASCRIPTS -->
+        <script type="text/javascript" src="{{baseurl}}/{{scope}}/assets/js/plugins.js"></script>
+        <script type="text/javascript" src="{{baseurl}}/{{scope}}/assets/js/main.js"></script>
+    </body> 
+    
+    
+</html>
