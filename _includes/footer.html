@@ -5,17 +5,43 @@
             <!-- FOOTER INNER -->
             <div class="footer-inner">
       
-                <p>Copyright &copy; <script>document.write(new Date().getFullYear())</script> Maitri Patel | Source Code Maintained by <a href="https://XinYaanZyoy.github.io">XinYaanZyoy</a></p>
+                <p>Copyright &copy; <script>document.write(new Date().getFullYear())</script> {{site.author}} | Source Code Maintained by <a href="https://XinYaanZyoy.github.io">XinYaanZyoy</a></p>
                 
-                <!-- SOCIAL ICONS -->
-<!--                 <ul class="social-icons scroll-animated-from-right">
-                    <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                 <ul class="social-icons scroll-animated-from-right">
+                    {% if site.facebook %}
+                        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                     {% endif %}
+                    {% if site.twitter %}
                     <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                     {% endif %}
+                    {% if site.google-plus %}
                     <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-                    <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                </ul> -->
-                <!-- /SOCIAL ICONS -->
-
+                     {% endif %}
+                    {% if site.linkedin %}
+                    <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>    
+                     {% endif %}
+                        {% if site.linkedin %}
+                        <a target="_blank" href="{{ site.authors.XinYaanZyoy.github }}"><i class="fab fa-github text-muted" aria-hidden="true"></i></a>  &nbsp;                
+                     {% endif %}
+                        {% if site.linkedin %}
+ <a target="_blank" href="{{ site.authors.XinYaanZyoy.youtube }}"><i class="fab fa-youtube text-muted" aria-hidden="true"></i></a>  &nbsp;                                
+                     {% endif %}
+                        {% if site.linkedin %}
+           <a target="_blank" href="{{ site.authors.XinYaanZyoy.instagram }}"><i class="fab fa-instagram text-muted" aria-hidden="true"></i></a>  &nbsp;
+                     {% endif %}
+                        {% if site.linkedin %}
+                                      <a target="_blank" href="{{ site.authors.XinYaanZyoy.spotify }}"><i class="fab fa-spotify text-muted" aria-hidden="true"></i></a>  &nbsp;
+                        {% endif %}
+                        {% if site.linkedin %}
+                           <a target="_blank" href="https://api.whatsapp.com/send?phone={{ site.authors.XinYaanZyoy.whatsapp }}"><i class="fab fa-whatsapp text-muted" aria-hidden="true"></i></a> &nbsp;
+                     {% endif %}
+                        {% if site.linkedin %}
+                <a target="_top" href="mailto:{{ site.authors.XinYaanZyoy.email }}"><i class="fa fa-envelope text-muted" aria-hidden="true"></i></a>  &nbsp;
+                     {% endif %}
+                        {% if site.linkedin %}
+                  <a target="_blank" href="{{ site.authors.XinYaanZyoy.messenger }}"><i class="fab fa-facebook-messenger text-muted" aria-hidden="true"></i></a>  &nbsp;
+                     {% endif %}
+                </ul> 
             
             </div>
             <!-- /FOOTER INNER -->
