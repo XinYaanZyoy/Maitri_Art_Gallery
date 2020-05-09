@@ -1,0 +1,12 @@
+name: entrier
+
+on: 
+  push:
+    paths: 
+      - 'arts/**'
+jobs:
+  build:
+    runs-on: ubuntu-latest   
+      - steps:
+          id: file_changes
+          uses: trilom/file-changes-action@v1.2.3
