@@ -1,15 +1,11 @@
-# India's Art Gallery
+# Alia's Art Gallery
 -------
 ## Usage
 1. upload an art in arts directory
-2. edit _config.yml by adding the following-like structure
-```
-art[number]:
-  image: [link to this art in arts directory]
-  title: [short title of this art]
-  caption: [long description of this art]
-```
-3. done! checkout the website!
+2. the entrier flow will automatically entry your art in your website
+3. edit _arts/[your art file name].md file for adding captions!
+4. done! checkout the website!
+5. if you delete an art from arts directory the entrier flow will automatically de-entry your art from your website
 --------
 Maintained by [XinYaanZyoy](https://XinYaanZyoy.github.io)
 
