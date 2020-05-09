@@ -11,3 +11,6 @@ jobs:
       - uses: trilom/file-changes-action@v1.2.3
         with:
           token: ${{secrets.GH_PAT}}
+      - name: Echo file changes
+        run: |
+          echo Changed files: ${{ steps.get_file_changes.outputs.files }}
