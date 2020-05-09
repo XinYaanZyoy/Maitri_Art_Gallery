@@ -24,16 +24,12 @@ youtube:
 whatsapp:
 # description of this website for about page and google search
 description: "the digital collection of my arts"
-# site settings
-defaults:
-  - scope:
-      path: "arts/"
-    values:
-      image: true
 collections:
   arts:
+    output: true
     art: true
   captions:
+    output: true
     caption: true
 plugins:
   - jekyll-feed
