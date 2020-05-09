@@ -38,6 +38,6 @@ if [ -d "$DIR" ]; then
     echo $'\n'"git status: $(git status)"$'\n';
     git push "https://XinYaanZyoy:$GH_PAT@github.com/XinYaanZyoy/Art_Gallery.git" HEAD:master
 else
-    echo "$DIR doesn't exist!";
+    echo "$DIR doesn\'t exist!";
 fi
 echo End Of Entry;
