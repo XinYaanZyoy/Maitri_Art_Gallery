@@ -11,9 +11,9 @@ scope: Art_Gallery
 # _______________________________
 # use this google tool for finding hexcode for your fav color https://www.google.com/search?q=color+picker
 # color of the theme on android phones
-theme_color: "#d80f48"
+theme_color: "#363636"
 # background color of caption page
-caption_bg_color: "#FF6666"
+caption_bg_color: "#ccc"
 
 # metadata settings
 # _________________________________
