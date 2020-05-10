@@ -167,9 +167,9 @@
     </script> -->
         <script>
       let shareData = {
-        title: 'MDN',
-        text: 'Learn web development on MDN!',
-        url: 'https://developer.mozilla.org',
+        title: '{{site.name}}',
+        text: '{{site.name}}',
+        url: '{{site.baseurl}}/{{site.scope}}',
       }
 
       const btn = document.querySelector('button');
@@ -178,7 +178,7 @@
       btn.addEventListener('click', () => {
         navigator.share(shareData)
           .then(() =>
-            resultPara.textContent = 'MDN shared successfully'
+            resultPara.textContent = 'Thanks for sharing!😊'
           )
           .catch((e) =>
             resultPara.textContent = 'Error: ' + e
