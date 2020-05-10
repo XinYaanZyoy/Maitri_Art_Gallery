@@ -116,10 +116,28 @@
         font-size: 8px !important;
     }
 }
-
-
-
         </style>
+        
+        <script>
+        let shareData = {
+                title: '{{site.name}}',
+                text: document.URL.split('/').pop()+' By '+'{{site.author}}'+' at '+'{{site.name}}',
+                url: '{{site.baseurl}}/{{site.scope}}'+'#'+document.URL.split('/').pop(),
+              }
+
+          const btn = document.querySelector('button');
+          const resultPara = document.querySelector('.result');
+
+          btn.addEventListener('click', () => {
+            navigator.share(shareData)
+              .then(() =>
+                resultPara.textContent = '{{site.name}} shared successfully'
+              )
+              .catch((e) =>
+                resultPara.textContent = 'Error: ' + e
+              )
+          });
+        </script>
     </head>
     <body style="overflow-y: scroll; background-color: {{site.caption_bg_color}}; color:white; padding: 5%;">
 
@@ -131,6 +149,8 @@
 
 </div>
 <!-- /NAVIGATION BUTTON -->
+        
+        <button align="center" style="font-size:24px">Share Art <i class="fa fa-share-alt"></i></button>
     
     <main class="page-content" aria-label="Content">
       <div class="wrapper">
