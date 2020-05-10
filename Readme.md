@@ -27,15 +27,15 @@
     7. paste it in the secrets of your repo (you find it in the repo specific settings) and name it GH_PAT
 
 - EVERY TIME
-    8. upload an art in arts directory
-    9. the entrier flow will automatically entry your art in your website
-    10. [optional] done! checkout the output! on the url your_github_username.github.io/your_repo_name
-    11. [optional] edit _arts/[your art file name].md file for adding captions!
-    12. [optional] done! checkout the output! on the url your_github_username.github.io/your_repo_name
+    1. upload an art in arts directory
+    2. the entrier flow will automatically entry your art in your website
+    3. [optional] done! checkout the output! on the url your_github_username.github.io/your_repo_name
+    4. [optional] edit _arts/[your art file name].md file for adding captions!
+    5. [optional] done! checkout the output! on the url your_github_username.github.io/your_repo_name
 
 - SOME TIMES
-    13. if you delete an art from arts directory the entrier flow will automatically de-entry your art from your website
-    14. [optional] done! checkout the output! on the url your_github_username.github.io/your_repo_name
+    1. if you delete an art from arts directory the entrier flow will automatically de-entry your art from your website
+    2. [optional] done! checkout the output! on the url your_github_username.github.io/your_repo_name
 --------
 Maintained by [XinYaanZyoy](https://XinYaanZyoy.github.io)
 
