@@ -117,27 +117,6 @@
     }
 }
         </style>
-        
-        <script>
-        let shareData = {
-                title: '{{site.name}}',
-                text: document.URL.split('/').pop()+' By '+'{{site.author}}'+' at '+'{{site.name}}',
-                url: '{{site.baseurl}}/{{site.scope}}'+'#'+document.URL.split('/').pop(),
-              }
-
-          const btn = document.querySelector('button');
-          const resultPara = document.querySelector('.result');
-
-          btn.addEventListener('click', () => {
-            navigator.share(shareData)
-              .then(() =>
-                resultPara.textContent = '{{site.name}} shared successfully'
-              )
-              .catch((e) =>
-                resultPara.textContent = 'Error: ' + e
-              )
-          });
-        </script>
     </head>
     <body style="overflow-y: scroll; background-color: {{site.caption_bg_color}}; color:white; padding: 5%;">
 
@@ -150,7 +129,10 @@
 </div>
 <!-- /NAVIGATION BUTTON -->
         
-        <button align="center" style="font-size:24px">Share Art <i class="fa fa-share-alt"></i></button>
+    <p><button>Share MDN!</button></p>
+    <p class="result"></p>
+
+        <!--         <button align="center" style="font-size:24px">Share Art <i class="fa fa-share-alt"></i></button> -->
     
     <main class="page-content" aria-label="Content">
       <div class="wrapper">
@@ -164,6 +146,26 @@
         <!-- JAVASCRIPTS -->
         <script type="text/javascript" src="{{site.baseurl}}/{{site.scope}}/assets/js/plugins.js"></script>
         <script type="text/javascript" src="{{site.baseurl}}/{{site.scope}}/assets/js/main.js"></script>
+         <script>
+      let shareData = {
+        title: 'MDN',
+        text: 'Learn web development on MDN!',
+        url: 'https://developer.mozilla.org',
+      }
+
+      const btn = document.querySelector('button');
+      const resultPara = document.querySelector('.result');
+
+      btn.addEventListener('click', () => {
+        navigator.share(shareData)
+          .then(() =>
+            resultPara.textContent = 'MDN shared successfully'
+          )
+          .catch((e) =>
+            resultPara.textContent = 'Error: ' + e
+          )
+      });
+    </script>
     </body> 
     
     
