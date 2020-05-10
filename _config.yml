@@ -1,7 +1,7 @@
 # site settings
 # ______________________________
 # name of the website
-name: "Alia's Art Gallery"
+name: "Art Gallery"
 # github pages url
 baseurl: https://XinYaanZyoy.github.io
 # repository name
@@ -20,11 +20,11 @@ caption_bg_color: "#FF6666"
 # greetings on the gome page
 greeting: "Hi!"
 # author of the website
-author: "Alia Bhatt"
+author: "XinYaanZyoy"
 # heading on the home and about page
 heading: "This is my Art Gallery"
 # description of this website for about page and google search
-description: "the digital collection of my arts"
+description: "the digital collection of my special arts"
 
 # graphics settings
 # _____________________________________
@@ -40,16 +40,15 @@ pic: "assets/img/me.jpg"
 # author's email
 email: "AliaBhatt@email.com"
 # author's socials
-twitter: https://twitter.com/aliaa08
-facebook:
-instagram: https://www.instagram.com/aliaabhatt/
-youtube: https://www.youtube.com/channel/UC8iJjhq3c1K1Mc-jpl51EKg
-whatsapp:
+twitter: https://twitter.com/XinYaanZyoy
+facebook: https://www.facebook.com/49yatriyaan.love
+instagram: https://www.instagram.com/49yatriyaan.love/
+youtube:
+whatsapp: +918155903610
 google-plus:
-linkedin:
-github:
-spotify:
-messenger:
+linkedin: https://www.linkedin.com/in/xin-yaan-zyoy-1563b6154/
+spotify: https://xinyaanzyoy.github.io/podcast/
+messenger: https://www.messenger.com/t/49yatriyaan.love
 
 # jekyll Settings
 # _________________________________
